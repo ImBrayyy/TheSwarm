@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Swarm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <!--
+    <div class="container-fluid p-0 m-0">
+
+        <div class="row darkGreyBackground">
+            <div class="col">
+                <div class="d-flex flex-row justify-content-around">
+                    <div id="generation" class="p-6">Generation: 1</div>
+                    <div id="completionCount" class="p-6">Completion Count Of Last Gen: 0</div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row justify-content-center align-items-center blackBackground">
+            <div class="col-md-6 text-center blackBackground">
+                <div id="canvasContainer">
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col d-flex justify-content-center box border">
+                <div id="generation">
+                    Generation: 0
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center box border">
+                <div id="completionCount">
+                    Completion Count Of Last Gen: 0
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 box border">
+                <ul>
+                    <li> Drag and release to build </li>
+                    <li> Make sure to not build on spawn location! </li>
+                    <li> Check the keybinds for useful building features </li>
+
+
+                </ul>
+                
+            </div>
+            <div class="col-md-6 box d-flex justify-content-center">
+                <div id="canvasContainer"></div>
+            </div>
+            <div class="col-md-3 box border">
+                <div id="keybinds">
+                    <div id="keybindInfo">
+                        <strong> U- </strong>
+                        Undo Building
+                    </div>
+                    <div id="keybindInfo">
+                        <strong> Shift- </strong>
+                        (hold) Square Building
+                    </div>
+                    <div id="keybindInfo">
+                        <strong> Spacebar- </strong>
+                        Spawn Population
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+
+    <script src="Goal.js"> </script>
+    <script src="Population.js"> </script>
+    <script src="Wall.js"> </script>
+    <script src="Brain.js"> </script>
+    <script src="Dot.js"> </script>
+    <script src="script.js"> </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+</body>
+</html>
